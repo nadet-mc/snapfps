@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "snapfps",
+	"version": "${version}",
+	"name": "SnapFPS",
+	"description": "A simple Fabric mod that displays the current FPS on screen.",
+	"authors": [
+		"NadetMC"
+	],
+
+	"contact": {
+		"homepage": "https://github.com/nadetmc/snapfps/"
+
+	},
+	"license": "MIT",
+	"icon": "assets/nadetmc/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.nadetmc.snapfps.SnapFPSMod"
+		],
+		"modmenu": [
+			"com.nadetmc.snapfps.config.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"snapfps.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "1.21.4",
+		"fabric-key-binding-api-v1": "*",
+		"fabric-lifecycle-events-v1": "*"
+	},
+	"suggests": {
+		"cloth-config": "*",
+		"modmenu": "*",
+		"yet_another_config_lib_v3": "*"
+	}
+}
