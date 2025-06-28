@@ -1,0 +1,14 @@
+{
+  "text.snapfps.options.title": "SnapFPS Settings",
+  "text.snapfps.options.enabled": "Enable SnapFPS",
+  "text.snapfps.options.advancedStats": "Show Advanced Stats",
+  "text.snapfps.options.textSize": "Text Size",
+  "text.snapfps.options.textColor": "Text Color",
+  "text.snapfps.options.textAlpha": "Text Alpha",
+  "text.snapfps.options.textShadows": "Enable Shadows",
+  "text.snapfps.options.offsetTop": "Vertical Offset",
+  "text.snapfps.options.offsetLeft": "Horizontal Offset",
+  "text.snapfps.options.keybindMode": "Keybind Mode",
+  "key.snapfps.toggleOverlay": "Toggle SnapFPS",
+  "key.snapfps.category": "SnapFPS"
+}
