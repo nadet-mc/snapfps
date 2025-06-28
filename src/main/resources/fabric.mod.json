@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "fpsdisplay",
+	"id": "snapfps",
 	"version": "${version}",
-	"name": "FPS-Display",
+	"name": "SnapFPS",
 	"description": "A simple Fabric mod that displays the current FPS on screen.",
 	"authors": [
 		"NadetMC"
@@ -28,7 +28,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15.10",
-		"minecraft": [">=1.21.1 <=1.21.4"],
+		"minecraft": "1.21.2",
 		"fabric-key-binding-api-v1": "*",
 		"fabric-lifecycle-events-v1": "*"
 	},

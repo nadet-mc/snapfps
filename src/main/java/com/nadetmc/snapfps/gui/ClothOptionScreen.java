@@ -39,7 +39,7 @@ public class ClothOptionScreen {
                 .setDefaultValue(configDefaults.textSize)
                 .setSaveConsumer(newValue -> config.textSize = newValue)
                 .build());
-        general.addEntry(entryBuilder.startColorField(Text.translatable("text.fpsdisplay.options.textColor"), config.textColor)
+        general.addEntry(entryBuilder.startColorField(Text.translatable("text.snapfps.options.textColor"), config.textColor)
                 .setDefaultValue(configDefaults.textColor)
                 .setSaveConsumer(newValue -> config.textColor = newValue)
                 .build());

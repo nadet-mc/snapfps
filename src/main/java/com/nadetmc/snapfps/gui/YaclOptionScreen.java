@@ -35,38 +35,38 @@ public class YaclOptionScreen {
         );
 
         categoryBuilder.option(Option.<Float>createBuilder()
-                .name(Text.translatable("text.fpsdisplay.options.textSize"))
+                .name(Text.translatable("text.snapfps.options.textSize"))
                 .binding(configDefaults.textSize, () -> config.textSize, newValue -> config.textSize = newValue)
                 .controller(option -> FloatSliderControllerBuilder.create(option).range(0.1f, 3.0f).step(0.1f))
                 .build()
         );
         categoryBuilder.option(Option.<Color>createBuilder()
-                .name(Text.translatable("text.fpsdisplay.options.textColor"))
+                .name(Text.translatable("text.snapfps.options.textColor"))
                 .binding(new Color(configDefaults.textColor), () -> new Color(config.textColor), newValue -> config.textColor = (newValue.getRGB() & 0xFFFFFF))
                 .controller(option -> ColorControllerBuilder.create(option).allowAlpha(false))
                 .build()
         );
         categoryBuilder.option(Option.<Integer>createBuilder()
-                .name(Text.translatable("text.fpsdisplay.options.textAlpha"))
+                .name(Text.translatable("text.snapfps.options.textAlpha"))
                 .binding(configDefaults.textAlpha, () -> config.textAlpha, newValue -> config.textAlpha = newValue)
                 .controller(option -> IntegerSliderControllerBuilder.create(option).range(0, 255).step(1))
                 .build()
         );
         categoryBuilder.option(Option.<Boolean>createBuilder()
-                .name(Text.translatable("text.fpsdisplay.options.textShadows"))
+                .name(Text.translatable("text.snapfps.options.textShadows"))
                 .binding(configDefaults.textShadows, () -> config.textShadows, newValue -> config.textShadows = newValue)
                 .controller(YaclOptionScreen::createBooleanController)
                 .build()
         );
 
         categoryBuilder.option(Option.<Integer>createBuilder()
-                .name(Text.translatable("text.fpsdisplay.options.offsetTop"))
+                .name(Text.translatable("text.snapfps.options.offsetTop"))
                 .binding(configDefaults.offsetTop, () -> config.offsetTop, newValue -> config.offsetTop = newValue)
                 .controller(IntegerFieldControllerBuilder::create)
                 .build()
         );
         categoryBuilder.option(Option.<Integer>createBuilder()
-                .name(Text.translatable("text.fpsdisplay.options.offsetLeft"))
+                .name(Text.translatable("text.snapfps.options.offsetLeft"))
                 .binding(configDefaults.offsetLeft, () -> config.offsetLeft, newValue -> config.offsetLeft = newValue)
                 .controller(IntegerFieldControllerBuilder::create)
                 .build()
